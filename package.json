@@ -1,0 +1,23 @@
+
+{
+  "name": "ci-practice",
+  "version": "1.0.0",
+  "description": "Local CI pipeline practice",
+  "main": "index.js",
+  
+"scripts": {
+  "lint": "eslint src",
+  "test": "node --test src/*.test.js",
+  "security": "npm audit",
+  "check": "npm run lint && npm test && npm run security"
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "@eslint/js": "^9.0.0"
+  }
+}
